@@ -18,6 +18,18 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 993px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+}
+
 body {
   height: 100%;
   display: -webkit-box;
@@ -106,7 +118,142 @@ body {
   display: block;
 }
 
-.site-header__btn {
+.intro-section {
+  width: 100%;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 4rem auto 4.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro-section__text-wrapper {
+  width: 100%;
+  max-width: 674px;
+}
+
+@media only screen and (max-width: 885px) {
+  .intro-section__text-wrapper {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.intro-section__title {
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 1.14;
+  letter-spacing: 0.56px;
+  margin-bottom: 3.5rem;
+}
+
+@media only screen and (max-width: 1210px) {
+  .intro-section__title {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .intro-section__title {
+    font-size: 3.5rem;
+  }
+}
+
+.intro-section__title span {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../images/svg/big-star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media only screen and (max-width: 440px) {
+  .intro-section__title span {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.intro-section__frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1.39;
+  letter-spacing: 0.48px;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 885px) {
+  .intro-section__frame {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .intro-section__frame {
+    font-size: 1.7rem;
+  }
+}
+
+.intro-section__frame span {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/svg/small-star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 1.6rem;
+}
+
+.intro-section__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 885px) {
+  .intro-section__btn-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.intro-section__img {
+  width: 44%;
+  height: auto;
+}
+
+@media only screen and (max-width: 885px) {
+  .intro-section__img {
+    display: none;
+  }
+}
+
+.site-header__btn, .intro-section__btn {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -145,5 +292,15 @@ body {
   .burger-btn {
     display: block;
   }
+}
+
+.intro-section__btn {
+  padding: 1.3rem 3.3rem;
+  color: #161513;
+}
+
+.intro-section__btn:first-child {
+  background-color: #161513;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

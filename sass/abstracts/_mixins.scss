@@ -17,7 +17,7 @@
 
 @mixin responsive($breakpoint) {
     @if($breakpoint == m-phone) {
-        @media only screen and (max-width: 400px) { @content }
+        @media only screen and (max-width: 440px) { @content }
     };
     @if($breakpoint == phone) {
         @media only screen and (max-width: 576px) { @content }
@@ -25,10 +25,13 @@
     @if($breakpoint == tables) {
         @media only screen and (max-width: 768px) { @content }
     };
+    @if($breakpoint == middle-table) {
+        @media only screen and (max-width: 885px) { @content }
+    };
     @if($breakpoint == big-tables) {
-        @media only screen and (max-width: 992px) { @content }
+        @media only screen and (max-width: 993px) { @content }
     };
     @if($breakpoint == desktop) {
-        @media only screen and (max-width: 1200px) { @content }
+        @media only screen and (max-width: 1210px) { @content }
     };
 }

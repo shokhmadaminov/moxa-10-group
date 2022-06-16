@@ -32,3 +32,13 @@
         display: block;
     }
 }
+
+.intro-section__btn {
+    @extend %main-buttons-text;
+    padding: 1.3rem 3.3rem;
+    color: $text-color;
+    &:first-child {
+        background-color: $el-bg-color;
+        color: $white-color;
+    }
+}

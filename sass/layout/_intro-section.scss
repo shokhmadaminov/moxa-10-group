@@ -78,3 +78,24 @@
         }
     }
 }
+
+.abality {
+    padding-top: 7rem;
+    overflow-x: hidden;
+    &__inner {
+        width: 1520px;
+        padding: 2rem 3rem;
+        background-color: $el-bg-color;
+        color: $white-color;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12rem;
+        transform: rotate(-4.93deg);
+    }
+    img {
+        width: 21px;
+        height: 21px;
+        margin-right: 7rem;
+        margin-left: 2rem;
+    }
+}

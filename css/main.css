@@ -253,6 +253,34 @@ body {
   }
 }
 
+.abality {
+  padding-top: 7rem;
+  overflow-x: hidden;
+}
+
+.abality__inner {
+  width: 1520px;
+  padding: 2rem 3rem;
+  background-color: #161513;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12rem;
+  -webkit-transform: rotate(-4.93deg);
+          transform: rotate(-4.93deg);
+}
+
+.abality img {
+  width: 21px;
+  height: 21px;
+  margin-right: 7rem;
+  margin-left: 2rem;
+}
+
 .site-header__btn, .intro-section__btn {
   font-weight: 400;
   font-size: 1.6rem;

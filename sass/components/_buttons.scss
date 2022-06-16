@@ -1,0 +1,34 @@
+%main-buttons-text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-decoration: none;
+    border: solid 1px $el-bg-color;
+} 
+%button-styles {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.site-header__btn {
+    @extend %main-buttons-text;
+    color: $text-color;
+    padding: 0.9rem 2.6rem;
+    @include responsive(phone) {
+        display: none;
+    }
+}
+
+.burger-btn {
+    @extend %button-styles;
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+    display: none;
+    @include responsive(phone) {
+        display: block;
+    }
+}

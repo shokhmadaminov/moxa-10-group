@@ -1,0 +1,18 @@
+.site-header {
+    padding: 2.7rem 0;
+    &__inner {
+        @include container(1320px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.site-logo {
+    display: flex;
+    &__img {
+        width: 131px;
+        height: 32px;
+        display: block;
+    }
+}

@@ -1,0 +1,18 @@
+.sitenav {
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    &__item:not(:last-child) {
+        margin-right: 3.2rem;
+    }
+    a {
+        @include site-text;
+        text-decoration: none;
+        border-bottom: 1px solid $text-color;
+    }
+    @include responsive(phone) {
+        display: none;
+    }
+}

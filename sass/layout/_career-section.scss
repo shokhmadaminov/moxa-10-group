@@ -1,0 +1,75 @@
+.career-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 12rem;
+    @include responsive(big-tables) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    &__left {
+        width: 100%;
+        max-width: 408px;
+        @include responsive(big-tables) {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+    }
+    &__left-subtitle {
+        @include small-title;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.1rem;
+        @include responsive(big-tables) {
+            justify-content: center;
+        }
+        span {
+            width: 2rem;
+            height: 2rem;
+            background-image: url("../images/svg/small-star.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin: 0 0.8rem;
+        }
+    }
+    &__left-title {
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 1.14;
+        letter-spacing: 0.56px;
+    }
+    &__right {
+        width: 100%;
+        max-width: 612px;
+    }
+    &__right-title {
+        font-weight: 400;
+        font-size: 3.1rem;
+        line-height: 1.3;
+        letter-spacing: 0.64px;
+        margin-bottom: 3.6rem;
+    }
+    &__right-text {
+        margin-bottom: 2.7rem;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bottom-item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__bottom-item span:first-child {
+        font-size: 1.2rem;
+        line-height: 1.3;
+        color: $primary-color;
+        margin-bottom: 0.9rem;
+    }
+    &__bottom-item span:last-child {
+        @include small-title;
+    }
+}

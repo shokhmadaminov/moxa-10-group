@@ -81,6 +81,9 @@
 
 .abality {
     padding-top: 7rem;
+    padding-bottom: 12rem;
+    margin-bottom: 12rem;
+
     overflow-x: hidden;
     &__inner {
         width: 1520px;
@@ -89,7 +92,6 @@
         color: $white-color;
         display: flex;
         align-items: center;
-        margin-bottom: 12rem;
         transform: rotate(-4.93deg);
     }
     img {

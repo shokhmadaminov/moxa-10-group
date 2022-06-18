@@ -1,0 +1,61 @@
+.awards-section {
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        @include main-star-img;
+    }
+    &__title {
+        @include main-title;
+    }
+    &__subtitle {
+        @include main-subtitle;
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        list-style: none;
+    }
+    &__item {
+        border: 2px solid $el-bg-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3.8rem 3.4rem;
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__item-left {
+        display: flex;
+        align-items: center;
+    }
+    &__item-number {
+        background-color: $primary-color;
+        width: 4.8rem;
+        height: 4.8rem;
+        color: $white-color;
+        margin-right: 2.4rem;
+        text-align: center;
+        line-height: 4.8rem;
+    }
+    &__item-left-text {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item-left-text span:first-child {
+        @include small-title;
+    }
+    &__right {
+        display: flex;
+        align-items:center;
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+    &__right span:first-child {
+        margin-right: 1.6rem;
+    }
+}

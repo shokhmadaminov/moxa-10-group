@@ -1,0 +1,51 @@
+.project-section {
+    margin-bottom: 12rem;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        list-style: none;
+        @include responsive(tables) {
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+        }
+        @include responsive(m-phone) {
+            grid-template-columns: repeat(3, minmax(50px, 1fr));
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.2rem 1rem;
+        border: solid #332f29 2px;
+        text-align: center;
+        @include responsive(phone) {
+            padding: 1.8rem 0.8rem;
+        }
+        &:nth-child(2) {
+            background-color: $el-bg-color;
+            color: $white-color;
+        }
+    }
+    &__item span:first-child {
+        font-size: 5.6rem;
+        line-height: 1.14;
+        margin-bottom: 1.1rem;
+        @include responsive(tables) {
+            font-size: 4.6rem;
+        }
+        @include responsive(m-phone) {
+            font-size: 3.6rem;
+        }
+    }
+    &__item span:last-child {
+        @include site-text;
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+        @include responsive(tables) {
+            font-size: 1.3rem;
+        }
+    }
+    &__item:nth-child(2) span:last-child {
+        color: $white-color;
+    }
+}

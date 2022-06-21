@@ -28,10 +28,19 @@
         &:not(:last-child) {
             margin-bottom: 2.4rem;
         }
+        @include responsive(tables) {
+            padding: 3rem 2rem;
+        }
+        @include responsive(phone) {
+            flex-direction: column;
+        }
     }
     &__item-left {
         display: flex;
         align-items: center;
+        @include responsive(phone) {
+            flex-direction: column;
+        }
     }
     &__item-number {
         background-color: $primary-color;
@@ -41,6 +50,13 @@
         margin-right: 2.4rem;
         text-align: center;
         line-height: 4.8rem;
+        @include responsive(tables) {
+            margin-right: 1rem;
+        }
+        @include responsive(phone) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
     }
     &__item-left-text {
         display: flex;

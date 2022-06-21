@@ -80,9 +80,11 @@
 }
 
 .abality {
+    width: 100%;
     padding-top: 7rem;
     margin-bottom: 12rem;
-
+    margin-left: auto;
+    margin-right: auto;
     overflow-x: scroll;
     &__inner {
         width: 1520px;
@@ -91,6 +93,8 @@
         color: $white-color;
         display: flex;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     img {
         width: 21px;

@@ -1,0 +1,94 @@
+.portfolio-section {
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__img {
+        @include main-star-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__subtitle {
+        @include main-subtitle;
+    }
+    &__title {
+        @include main-title;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 9.6rem;
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            img {
+                margin-right: 0;
+                margin-left: 4.4rem;
+                @include responsive(tables) {
+                    margin-left: 0;
+                }
+            }
+            @include responsive(tables) {
+                flex-direction: column;
+            }
+        }
+        @include responsive(tables) {
+            flex-direction: column;
+        }
+    }
+    &__item-img {
+        width: 460px;
+        height: 307px;
+        object-fit: cover;
+        margin-right: 4.4rem;
+        @include responsive(big-tables) {
+            width: 50%;
+            height: auto;
+        }
+        @include responsive(tables) {
+            margin-right: 0;
+            margin-bottom: 1.5rem;
+        }
+        @include responsive(m-phone) {
+            width: 65%;
+        }
+    }
+    &__item-content {
+        width: 100%;
+        max-width: 556px;
+        text-align: left;
+        @include responsive(tables) {
+            text-align: center;
+        }
+    }
+    &__item-subtitle {
+        color: $white-color;
+        padding: 0.4rem 1.2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        background-color: $primary-color;
+    }
+    &__item-title {
+        @include main-title;
+        margin-bottom: 4.9rem;
+        @include responsive(big-tables) {
+            font-size: 3.5rem;
+            margin-bottom: 3.5rem;
+        }
+    }
+    &__item-link {
+        text-decoration: none;
+        color: $text-color;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
